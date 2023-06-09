@@ -1,0 +1,61 @@
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #121212;
+  width: 100vw;
+  height: 8vh;
+  z-index: 999;
+}
+
+.Container{
+  font-family: 'SEGA LOGO FONT', sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+#logo-image{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#erdur{
+  color: #E7AFA3;
+}
+
+#gaming{
+  color: #8EE9E1;
+}
+
+.Toggle-Container{
+  position: relative;
+  margin-left: 40px;
+  background-color: #fff;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.Toggle-Switcher{
+  position: absolute;
+  top: 3.5px;
+  left: 3.5px;
+  background-color: #121212;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  transition: .5s;
+}
+
+.Toggle-Switcher-Moved{
+  position: absolute;
+  top: 3.5px;
+  left: 43px;
+  background-color: #121212;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  transition: .5s;
+}

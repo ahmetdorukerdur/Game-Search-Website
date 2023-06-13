@@ -2,7 +2,17 @@ nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #121212;
+  background-color: #AD83B7;
+  width: 100vw;
+  height: 8vh;
+  z-index: 999;
+}
+
+.dark-mode{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #300A58;
   width: 100vw;
   height: 8vh;
   z-index: 999;
@@ -21,7 +31,7 @@ nav{
 }
 
 #erdur{
-  color: #E7AFA3;
+  color: #DA9B26;
 }
 
 #gaming{
@@ -42,7 +52,7 @@ nav{
   position: absolute;
   top: 3.5px;
   left: 3.5px;
-  background-color: #121212;
+  background-color: #AD83B7;
   width: 33px;
   height: 33px;
   border-radius: 50%;
@@ -53,7 +63,7 @@ nav{
   position: absolute;
   top: 3.5px;
   left: 43px;
-  background-color: #121212;
+  background-color: #300A58;
   width: 33px;
   height: 33px;
   border-radius: 50%;

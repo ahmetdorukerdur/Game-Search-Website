@@ -7,7 +7,7 @@ const NavBar = () => {
   const {themeChange, setThemeChange} = useContext(ToggleWrapper);
   return (
     <Fragment>
-      <nav style={themeChange ? {backgroundColor: '#fffff'} : undefined}>
+      <nav className={themeChange ? 'dark-mode' : 'nav'}>
         <div className='Container'>
           <span id='erdur'>Erdur</span><img id='logo-image' src={GamingLogo}/><span id='gaming'>Gaming</span>
         </div>

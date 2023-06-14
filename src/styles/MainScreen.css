@@ -1,0 +1,11 @@
+.disable{
+  display: none;
+}
+
+.container{
+  user-select: none;
+}
+
+.game-image{
+  width: 300px;
+}

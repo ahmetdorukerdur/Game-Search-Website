@@ -8,7 +8,7 @@ function App() {
   const [themeChange, setThemeChange] = useState(false);
   return (
     <ToggleWrapper.Provider value={{ themeChange, setThemeChange}}>
-      <div className='App'>
+      <div className={ themeChange ? 'dark' : 'light'}>
         <NavBar />
         <MainScreen />
       </div>

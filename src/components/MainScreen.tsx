@@ -29,12 +29,17 @@ const MainScreen = () => {
     <Fragment>
       <div >
         <div className='container'>
-          <div className='Bg-Container-dark'>
+          <div className={ themeChange ? 'dark-background' : 'light-background'}>
             {games && <img className='game-image' src={games[index].background_image} alt='' draggable={false}/>}
             {games && <h2>{games[index].name}</h2>}
-            <MdOutlineNavigateBefore fontSize={100} cursor='pointer' onClick={() => setIndex(index - 1)} className={index < 1 ? 'disable' : 'active'}/>
-            <MdOutlineNavigateNext fontSize={100} cursor='pointer' onClick={() =>setIndex(index + 1)} className={index >= 19 ? 'disable' : 'active'}/>
+            <div className='right-and-left-icon'>
+              <MdOutlineNavigateBefore fontSize={100} cursor='pointer' onClick={() => setIndex(index - 1)} className={index < 1 ? 'disable' : 'active'}/>
+              <MdOutlineNavigateNext fontSize={100} cursor='pointer' onClick={() =>setIndex(index + 1)} className={index >= 19 ? 'disable' : 'active'}/>
+            </div>
           </div>
+        </div>
+        <div className='description'>
+          {games && <p>{games[index].description}</p>}
         </div>
       </div>
     </Fragment>

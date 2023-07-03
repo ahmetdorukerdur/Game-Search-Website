@@ -4,8 +4,30 @@
 
 .container{
   user-select: none;
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
 }
 
 .game-image{
-  width: 300px;
+  width: 600px;
+  height: 350px;
+}
+
+.light-background{
+  color: black;
+}
+
+.right-and-left-icon{
+  display: flex;
+  justify-content: center;
 }

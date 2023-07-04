@@ -29,12 +29,14 @@ const MainScreen = () => {
     <Fragment>
       <div >
         <div className='container'>
-          <div className={ themeChange ? 'dark-background' : 'light-background'}>
-            {games && <img className='game-image' src={games[index].background_image} alt='' draggable={false}/>}
-            {games && <h2>{games[index].name}</h2>}
-            <div className='right-and-left-icon'>
-              <MdOutlineNavigateBefore fontSize={100} cursor='pointer' onClick={() => setIndex(index - 1)} className={index < 1 ? 'disable' : 'active'}/>
-              <MdOutlineNavigateNext fontSize={100} cursor='pointer' onClick={() =>setIndex(index + 1)} className={index >= 19 ? 'disable' : 'active'}/>
+          <div className={themeChange ? 'dark-background' : 'light-background'}>
+            <div className='image-and-next-before'>
+              <MdOutlineNavigateBefore id='navigate-before' fontSize={100} cursor='pointer' onClick={() => setIndex(index - 1)} className={index < 1 ? 'disable' : 'active'}/>
+              <div className='image-and-titlestop'>
+                {games && <img className='game-image' src={games[index].background_image} alt='' draggable={false}/>}
+                {games && <h2>{games[index].name}</h2>}
+              </div>
+              <MdOutlineNavigateNext id='navigate-next' fontSize={100} cursor='pointer' onClick={() =>setIndex(index + 1)} className={index >= 19 ? 'disable' : 'active'}/>
             </div>
           </div>
         </div>

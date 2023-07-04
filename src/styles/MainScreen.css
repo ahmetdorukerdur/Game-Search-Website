@@ -1,16 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .disable{
   display: none;
 }
 
 .container{
-  user-select: none;
-  width: 100vw;
-  height: 100vw;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.image-and-next-before{
   display: flex;
   justify-content: center;
   padding: 20px;
-  color: #ffffff;
-  margin: 0;
+  width: auto;
 }
 
 h2{
@@ -19,15 +28,17 @@ h2{
 }
 
 .game-image{
-  width: 600px;
-  height: 350px;
+  width: 500px;
+  block-size: auto;
+  max-inline-size: 100%;
 }
 
 .light-background{
   color: black;
+  user-select: none;
 }
 
-.right-and-left-icon{
-  display: flex;
-  justify-content: center;
+.dark-background{
+  color: white;
+  user-select: none;
 }

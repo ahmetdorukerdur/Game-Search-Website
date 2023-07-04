@@ -1,8 +1,3 @@
-body{
-  margin: 0;
-  overflow: hidden;
-}
-
 nav{
   display: flex;
   justify-content: space-around;
@@ -33,6 +28,16 @@ nav{
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 768px){
+  .Container{
+    font-size: 1.5rem;
+  }
+  #logo-image{
+    width: 30px;
+    height: 30px;
+  }
 }
 
 #erdur{
